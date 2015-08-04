@@ -1,3 +1,13 @@
 D:\Laptops\LME-EV3-SCIENCE-WIN32-ENUS-01-00-full-setup.exe /q /AcceptLicenses yes
 
 
+
+
+Get-WmiObject -Class Win32_Product | Select-Object -Property Name  > proglist.txt
+compare-object (get-content proglist.txt) (get-content masterproglist.txt)
+Get-WmiObject -Class "win32_quickfixengineering" | Select-Object -Property HotFixId > hotfixes.$(hostname)
+compare-object (get-content hotfixes.$(hostname)) (get-content masterhotfixlist.txt)
+
+
+
+
