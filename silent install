@@ -1,6 +1,6 @@
 D:\Laptops\LME-EV3-SCIENCE-WIN32-ENUS-01-00-full-setup.exe /q /AcceptLicenses yes
 
-
+C:\Program Files (x86)\Common Files\Adobe AIR\Versions\1.0\Adobe AIR Application Installer.exe -silent -euleAccepted -programMenu "Full path to .air file"
 
 
 Get-WmiObject -Class Win32_Product | Select-Object -Property Name  > proglist.txt
